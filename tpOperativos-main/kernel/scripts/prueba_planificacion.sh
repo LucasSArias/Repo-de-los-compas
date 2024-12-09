@@ -1,0 +1,1 @@
+../bin/kernel ../kernel_prueba_planificacion.config PLANI_PROC 32

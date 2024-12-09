@@ -1,0 +1,49 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "command": "make clean all",
+      "type": "shell",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "Memoria - Valgrind",
+      "type": "shell",
+      "command": "/usr/bin/valgrind",
+      "args": [
+        "--leak-check=full",
+        "--show-leak-kinds=all",
+        "--track-origins=yes",
+        "--log-file=valgrind-out.log",
+        "${workspaceFolder}/bin/${workspaceFolderBasename}",
+        "./memoria.config"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Memoria - Helgrind",
+      "type": "shell",
+      "command": "/usr/bin/valgrind",
+      "args": [
+        "--tool=helgrind",
+        "--log-file=helgrind-out.log",
+        "${workspaceFolder}/bin/${workspaceFolderBasename}",
+        "./memoria.config"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+../bin/kernel ../kernel_prueba_dinamicas.config MEM_DINAMICA_BASE 128

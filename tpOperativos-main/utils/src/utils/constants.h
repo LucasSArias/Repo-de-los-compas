@@ -1,0 +1,33 @@
+#ifndef CONSTANTS_H_
+#define CONSTANTS_H_
+
+// Módulos
+#define FILESYSTEM "Filesystem"
+#define KERNEL "Kernel"
+#define CPU "CPU"
+#define MEMORIA "Memoria"
+
+// Nombre de parámetros en el config
+#define P_PUERTO_ESCUCHA "PUERTO_ESCUCHA"
+#define P_IP_FILESYSTEM "IP_FILESYSTEM"
+#define P_PUERTO_FILESYSTEM "PUERTO_FILESYSTEM"
+#define P_TAM_MEMORIA "TAM_MEMORIA"
+#define P_ESQUEMA "ESQUEMA"
+#define P_ALGORITMO_BUSQUEDA "ALGORITMO_BUSQUEDA"
+#define P_PARTICIONES "PARTICIONES"
+#define P_MOUNT_DIR "MOUNT_DIR"
+#define P_BLOCK_SIZE "BLOCK_SIZE"
+#define P_BLOCK_COUNT "BLOCK_COUNT"
+#define P_RETARDO_ACCESO_BLOQUE "RETARDO_ACCESO_BLOQUE"
+#define P_LOG_LEVEL "LOG_LEVEL"
+#define P_PATH_INSTRUCCIONES "PATH_INSTRUCCIONES"
+#define P_RETARDO_RESPUESTA "RETARDO_RESPUESTA"
+#define P_IP_MEMORIA "IP_MEMORIA"
+#define P_PUERTO_MEMORIA "PUERTO_MEMORIA"
+#define P_PUERTO_ESCUCHA_DISPATCH "PUERTO_ESCUCHA_DISPATCH"
+#define P_PUERTO_ESCUCHA_INTERRUPT "PUERTO_ESCUCHA_INTERRUPT"
+
+// Errores a loguear
+#define ERROR_FILE_NOT_FOUND "No se pudo encontrar el archivo de configuracion en la ruta %s para el modulo %s."
+
+#endif // CONSTANTS_H_

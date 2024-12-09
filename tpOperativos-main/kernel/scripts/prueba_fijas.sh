@@ -1,0 +1,1 @@
+../bin/kernel ../kernel_prueba_fijas.config MEM_FIJA_BASE 12

@@ -1,0 +1,1 @@
+../bin/kernel ../kernel_prueba_stress.config THE_EMPTINESS_MACHINE 16
